@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/x icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndula coffee shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color:#468d8d;
+            color: rgb(255, 255, 255);
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #324a5a;
+            padding: 0.3rem;
+        }
+        nav a {
+            color: rgb(245, 245, 245);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            padding: 3rem;
+        }
+        .card {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            padding: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+        }
+        .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            max-width: 70%;
+            border-radius: 80px;
+        }
+        .card h3 {
+            margin: 0.5rem 0;
+        }
+        .card button {
+            background-color: #637a92;
+            color: rgb(253, 250, 250);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 0.3rem;
+            background-color:#468d8d;
+            color: rgb(255, 255, 255);
+        }
+		logo {
+		align: center;
+		background-color: #007bff;
+		}
+		/* Hero Section */
+.hero {
+    background: #e6e4e4;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.about {
+    background: #ebeaea;
+    padding: 2rem 0;
+    text-align: center;
+/*team section */
+
+}.team 
+
+     .team container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.team ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team li { 
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius:  10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team h3 {
+    margin-top: 0;
+}
+
+.team p {
+    font-size: 15px;
+    color: #666;
+}
+
+.team {
+    background-color: #f3f2f2;
+    text-align: center;
+}
+/* Contact Section */
+.contact {
+    padding: 2em;
+}
+.contact:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+.contact {
+    max-width: 600px;
+
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #939292;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact input, .contact textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color: #032B44;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #0097A7;
+}
+/* Reset styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Service container styling */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual service box styling */
+.service-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Headings and paragraph styling */
+h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-box {
+        max-width: 90%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="image/Ndula logo.png" width="120" align="left"><ul class="nav-links">
+      
+</div>
+        <h1>Wellcome to Ndula Coffee Shop</h1>
+    </header>
+	<!----- featured categories------->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#team">Team Members</a>
+        <a href="#location">Visit us</a>
+    </nav>
+<section id="shop" class="container">
+    <main class="container">
+        <div class="card">
+            <img src="image/Carame Macchiato.jpeg" alt="Carame Macchiato">
+            <h3>Carame Macchiato</h3>
+            <p>$80</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="image/americano.jpeg" alt="americano">
+            <h3>americano</h3>
+            <p>$80</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+		<img src="image/Holiday-Cocktail-Recipes-and-Party-Table.webp" alt="Holiday-Cocktail-Recipes-and-Party-Table">
+		<h3>Holiday-Cocktail-Recipes-and-Party-Table</h3>
+		<p>$100</p>
+		<button>Add to Cart</button>
+		</div>
+		 <div class="card">
+		<img src="image/cafe lait.jpeg" alt="cafe lait">
+		<h3>cafe lait</h3>
+		<p>$70</p>
+		<button>Add to Cart</button>
+		</div>
+		 <div class="card">
+		<img src="image/Breve.jpg" alt="Breve">
+		<h3>Breve</h3>
+		<p>$50</p>
+		<button>Add to Cart</button>
+		</div>
+		 <div class="card">
+		<img src="image/cortado.jpeg" alt="cortado">
+		<h3>cortado</h3>
+		<p>$50</p>
+		<button>Add to Cart</button>
+		</div>
+		 <div class="card">
+		<img src="image/Ristretto.jpeg" alt="Ristretto">
+		<h3>Ristretto</h3>
+		<p>$50</p>
+		<button>Add to Cart</button>
+		</div>
+		 <div class="card">
+		<img src="image/irish coffee.jpg" alt="irish coffee 8">
+		<h3>irish coffee</h3>
+		<p>$80</p>
+		<button>Add to Cart</button>
+		</div>
+		 
+        <div class="card">
+		<img src="image/Cappuccino.jpg" alt="Cappuccino">
+		<h3>Cappuccino</h3>
+		<p>$100</p>
+		<button>Add to Cart</button>
+		</div>
+        <div class="card">
+		<img src="image/mocha.jpeg" alt="mocha">
+		<h3>mocha</h3>
+		<p>$70</p>
+		<button>Add to Cart</button>
+		</div>
+        <div class="card">
+		<img src="image/Espresso.jpg" alt="Espresso">
+		<h3>Espresso</h3>
+		<p>$100</p>
+		<button>Add to Cart</button>
+		</div>
+        <div class="card">
+		<img src="image/long Black.jpg" alt="long Black">
+		<h3>long Black</h3>
+		<p>$80</p>
+		<button>Add to Cart</button>
+		</div>
+    </main>
+     </section>
+ <section class="service-container">
+        <div class="service-box">
+            <i class="icon">🚀</i>
+            <h3>Fast Delivery</h3>
+            <p>Get your order delivered in record time with our efficient logistics network.</p>
+        </div>
+        <div class="service-box">
+            <i class="icon">☕</i>
+            <h3>Professional Service</h3>
+            <p>We provide top-notch professional services coffee marker of your needs.</p>
+        </div>
+        <div class="service-box">
+            <i class="icon">💻</i>
+            <h3>Technical Support for making coffee</h3>
+            <p>Our experts are available 24/7 to help you with your technical issues on making coffee.</p>
+        </div>
+    </section>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Ndula coffee shop</h2>
+            <p>Where every cup tells a story. We are dedicated to serving the finest coffee in town, with ethically sourced beans and a warm atmosphere.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>We started as a small family-owned coffee shop with a passion for brewing the finest coffee. Our mission is to create a warm and welcoming space where everyone can enjoy a perfect cup of coffee.coffee.</p>
+        </div>
+    </section>
+   <section id="team"class="team">
+    <main class="container">
+            <center><h2>Our Team Members</h2></center>
+            <ol>
+                <li>
+                    <h3>Ihab A.Y Ndula</h3>
+                    <p> CEO </p>
+                </li>
+                <li>
+                    <h3>Aliyu A.Y Ndula</h3>
+                    <p>managing director</p>
+                </li>
+                <li>
+                    <h3>Adamu A.Y Ndula</h3>
+                    <p>Business Development</p>
+                </li>
+            </section>
+    <section id="contact" class="contact">
+                <h2> get in touch</h2>
+                <form id="contact-form" onsubmit="return validateForm()">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+            <!-- Location and Hours Section -->
+  <section id="location" class="location">
+    <div class="container">
+      <h2>Visit Us</h2>
+      <div class="location-content">
+        <div class="address">
+          <p>123 Coffee Lane,Kano City, Zoo Road 12345</p>
+          <p>Mon-Sun: 7:00 AM -10:00 PM</p>
+          <a href="https://maps.google.com" class="cta-button">Get Directions</a>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.95373531531615!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d2a6e0f4b03a!2sCoffee%20Shop!5e0!3m2!1sen!2sus!4v1622549400000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+        </div>
+    </section>
+	<script>
+	// Check and replace broken images
+document.querySelectorAll('img').forEach(img => {
+    img.onerror = () => {
+        img.src = 'placeholder.jpg'; // Replace with your placeholder image path
+    };
+});
+
+// Ensure smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    document.addEventListener("DOMContentLoaded", function () {
+        const lazyImages = document.querySelectorAll('img.lazy');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserved(img);
+                }
+            });
+        });
+        lazyImages.forEach(img => observer.observe(img));
+    });
+
+</script>
+
+<footer>
+  <!-- Footer -->
+  <footer>
+    <footer>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="contact-info">
+        <p>Phone: (234) 9011524219</p>
+        <p>Email: ayndula26@gmail.com</p>
+      </div>
+      
+        <p>Join our newsletter for exclusive offers and updates.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+          <div class="copyright">
+        <p>© 2025 Brewed with Love. All rights reserved.</p>
+      <div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </footer>
+    </footer>
+</body>
+</html>
